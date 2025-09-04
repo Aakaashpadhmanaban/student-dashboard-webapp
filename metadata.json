@@ -1,0 +1,5 @@
+{
+  "name": "Student Dashboard",
+  "description": "A dashboard to manage student attendance, tests, and doubts.",
+  "requestFramePermissions": []
+}
