@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <script type="importmap">
 {
   "imports": {
@@ -17,48 +17,13 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <script type="module" crossorigin src="/assets/index-DE6u7Nuj.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DYzESUOb.css">
 </head>
 <body>
     <div id="root"></div>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script type="module" src="index.tsx"></script>
-    <script type="module">
-  // Firebase SDK imports
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
-  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore.js";
 
-  // Your Firebase config (paste the one you copied earlier here)
-  const firebaseConfig = {
-  apiKey: "AIzaSyC-SIEL9SXhsEz0i157AigeKpyOeiXNkHo",
-  authDomain: "student-dashboard-17cbd.firebaseapp.com",
-  projectId: "student-dashboard-17cbd",
-  storageBucket: "student-dashboard-17cbd.firebasestorage.app",
-  messagingSenderId: "1055612810273",
-  appId: "1:1055612810273:web:eb6f2b34cff13d31055f60"
-};
-
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-
-  // Test: Add a student when page loads
-  window.addEventListener("load", async () => {
-    try {
-      await addDoc(collection(db, "students"), {
-        name: "Test Student",
-        roll: "001",
-        createdAt: new Date()
-      });
-      console.log("✅ Test student added!");
-    } catch (e) {
-      console.error("❌ Error adding test student: ", e);
-    }
-  });
-</script>
-
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
